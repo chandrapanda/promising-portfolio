@@ -5,45 +5,6 @@ body {
     font-size: 16px;
     line-height: 1.5;
 }
-   
-#main {
-    min-height: calc(100vh - 40vh);
-    background-image: url('https://images.unsplash.com/photo-1524195958835-70f542b1924b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2883&q=80');
-    background-size: cover;
-}
-#main > article {
-    flex: 1;
-}
-
-#main > nav, 
-#main > aside {
-    flex: 0 0 20vw;
-    background: beige;
-}
-
-#main > nav {
-    order: -1;
-}
-
-#main-project {
-    width: 90%;
-}
-
-#main-project img {
-    width: 100%;
-}
-
-.secondary-project {
-    width: 40%;
-}
-
-.secondary-project img {
-    width: 100%;
-}
-
-nav, aside {
-    font-size: 16px;
-}
 
 header {
     font-weight: 800;
@@ -65,6 +26,58 @@ header, footer, article, nav, aside {
 
 header, footer {
     background: #bbd1ea;
+}
+   
+#main {
+    min-height: calc(100vh - 40vh);
+    background-image: url('https://images.unsplash.com/photo-1524195958835-70f542b1924b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2883&q=80');
+    background-size: cover;
+}
+#main > article {
+    flex: 1;
+}
+
+#main > nav, 
+#main > aside {
+    flex: 0 0 20vw;
+    background: beige;
+}
+
+#main > nav {
+    order: -1;
+}
+
+.projects {
+    font-size: 40px;
+    color: white;
+}
+
+h1, h2 {
+    font-size: 40px;
+}
+
+#main-project {
+    color: navy;
+    font-size: 30px;
+    width: 90%;
+}
+
+#main-project img {
+    width: 100%;
+}
+
+.secondary-project {
+    color: navy;
+    width: 40%;
+}
+
+.secondary-project img {
+    color: navy;
+    width: 100%;
+}
+
+nav, aside {
+    font-size: 16px;
 }
 
 .item-container {
@@ -130,6 +143,8 @@ footer ul li {
     padding-bottom: 15px;
     margin-left: 20px;
 }
+
+/* When screen becomes smaller than 800px, unlinked images are removed from page and project demos also become smaller. */
 
 @media (max-width: 800px) {
     article {
