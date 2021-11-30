@@ -27,6 +27,8 @@ header, footer, article, nav, aside {
 header, footer {
     background: #bbd1ea;
 }
+
+/* Adds background image of desert and sky */
    
 #main {
     min-height: calc(100vh - 40vh);
@@ -58,12 +60,17 @@ h1, h2 {
 
 #main-project {
     color: navy;
-    font-size: 30px;
+    font-size: 25px;
     width: 90%;
 }
 
 #main-project img {
     width: 100%;
+    opacity: 1.0;
+}
+
+#main-project img:hover {
+    opacity: 0.5;
 }
 
 .secondary-project {
@@ -74,6 +81,11 @@ h1, h2 {
 .secondary-project img {
     color: navy;
     width: 100%;
+    opacity: 1.0;
+}
+
+.secondary-project img:hover {
+    opacity: 0.5;
 }
 
 nav, aside {
