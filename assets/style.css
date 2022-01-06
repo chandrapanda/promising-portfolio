@@ -138,7 +138,8 @@ input[type=submit]:hover {
 .card {
     text-align: center;
     font-weight: 500;
-    background-color: hsl(0, 0%, 100%);border-radius: 5px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5px;
     border-width: 1px;
     color: hsl(206, 17%, 28%);
     font-size: 20px;
@@ -156,6 +157,35 @@ footer ul li {
     margin-left: 20px;
 }
 
+/*Font styling for animation*/
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .typing-demo {
+    width: 22ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 50px;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+  
 /* When screen becomes smaller than 800px, unlinked images are removed from page and project demos also become smaller. */
 
 @media (max-width: 800px) {
