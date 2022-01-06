@@ -189,6 +189,9 @@ footer ul li {
 /* When screen becomes smaller than 800px, unlinked images are removed from page and project demos also become smaller. */
 
 @media (max-width: 800px) {
+    .typing-demo {
+        font-size: 20px;
+    }
     article {
         background-image:none;
     }
