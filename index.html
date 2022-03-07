@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chandra's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link href="assets/style.css" rel="stylesheet">
+    <link href="./public/css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <title>Chandra's Portfolio</title>
 </head>
 
 <body>
@@ -14,20 +18,22 @@
             <div class="wrapper">
                  <div id="top" class="typing-demo">Hello! I'm Chandra.</div>
             </div>
-            <img src="assets/images/pic.jpg" alt="Picture of Chandra Holt">
-            <br/>I'm a full-stack developer. <br/>
+            <img src="public/images/pic.jpg" alt="Picture of Chandra Holt">
+            <br/>& I'm a full-stack developer. <br/>
         </header>
         <div id="main">
             <article>
                 <div class="item-container">
-                    <p class="card"><a href="#about-me">About Me</p></a>
-                    <p class="card"><a href="#projects">Projects</p></a>
-                    <p class="card"><a href="#contact-me">Contact Me</p></a>
-                    <p class="card"><a target="_blank" href="assets/full-stack-CV.pdf" rel="CV" download="ChandraCV">Curriculum Vitae</a></p>
+                    <p class="my-card"><a href="#about-me">About Me</p></a>
+                    <p class="my-card"><a href="#featured">Featured Application</p></a>
+                    <p class="my-card"><a href="#my-projects">Projects</p></a>
+                    <p class="my-card"><a href="#contact-me">Contact Me</p></a>
+                    <p class="my-card"><a target="_blank" href="assets/full-stack-CV.pdf" rel="CV" download="ChandraCV">Curriculum Vitae</a></p>
                 </div>          
             </article>
             <div class="jumbotron" id="about-me">
                 <h2>About Me</h2>
+                <h3>Thanks for taking the time to visit my portfolio! I'm a Seattle native who has a tendancy to trot around the globe. I have a passion for design and UX improvements! I'm looking to create a better, happier future for the world through technlogy. Feel free to peruse my skillset and examples of my work below.</h3>
                 <ul>
                     <li>Proven experience as a Full Stack Developer </li>
                     <li>Experience developing desktop and mobile applications</li>
@@ -39,38 +45,78 @@
                     <li>Excellent communication and teamwork skills</li>
                 </ul>
             </div>
-            <div class ="jumbotron text-center" id="projects">
-                <h2>Projects</h2>
-                    <p>Click on the pictures to visit the projects.</p>
-                    <p>Click on the 'REPO' link to visit the repositories.</p>
+<!-- SIDE NAVIGATION BAR -->
+            <div class="sidenav">
+                <a href="#top">Home</a>
+                <a href="#about-me">About me</a>
+                <a href="#my-projects">See my projects</a>
+                <a target="_blank" href="assets/full-stack-CV.pdf" rel="CV" download="ChandraCV">Download my CV</a>
+                <a href="#contact-me">Contact</a>
+              </div>
+
+            <div class ="jumbotron text-center" id="featured">
+                <h1>Current Featured Project</h1>
+                    <p>[Click on the picture to visit the application.]</p>
+                    <p>Note: This application is deployed to Heroku. <br/>Please consult README for special installation instructions and contributions. <br/>This app features secure login/signup, backend storage, <br/>and a dynamic front-end powered by HANDLEBARS.JS! <br/>Other technologies used are listed in the repository.</p>
                 <div class="item-container">
                     <div id="main-project">
-                        <h3>Don't Get Bored! Application</h3>
-                        <h4><a target="_blank" href="https://github.com/chandrapanda/MXC-team">REPO</a></h4>
-                        <a target="_blank" href="https://chandrapanda.github.io/MXC-team/"><img src="assets/images/boredom.png"></a>
+                        <h3>Happy Habit Tracker</h3>
+                        <h4><a target="_blank" href="https://github.com/chandrapanda/happy-habit-tracker">View Repository</a></h4>
+                        <a target="_blank" href="https://happy-habit-tracker-app.herokuapp.com"><img src="public/images/happy-habit-tracker.png"></a>
                     </div>
-                        <div class="secondary-project">
-                            <h3>Coolest Password Generator</h3>
-                            <h4><a target="_blank" href="https://github.com/chandrapanda/coolest-password-generator">REPO</a></h4>
-                            <a target="_blank" href="https://chandrapanda.github.io/coolest-password-generator/"><img src="assets/images/password+generator.png" alt="Password Generator"></a>
-                        </div>
-                        <div class="secondary-project">
-                            <h3>The ULTIMATE JavaScript Quiz Game</h3>
-                            <h4><a target="_blank" href="https://github.com/chandrapanda/squidQuizGame">REPO</a></h4>
-                            <a target="_blank" href="https://chandrapanda.github.io/squidQuizGame/"><img src="assets/images/quiz+game.png" alt="Quiz Game"></a>
-                        </div>
-                        <div class="secondary-project">
-                            <h3>Workday Scheduler</h3>
-                            <h4><a target="_blank" href="https://github.com/chandrapanda/dirty-work-day-scheduler">REPO</a></h4>
-                            <a target="_blank" href="https://chandrapanda.github.io/dirty-work-day-scheduler/"><img src="assets/images/scheduler.png" alt="Portfolio"></a>
-                        </div>
-                        <div class="secondary-project">
-                        <h3>Sweather Weather Application</h3>
-                        <h4><a target="_blank" href="https://github.com/chandrapanda/sweater-weather-app">REPO</a></h4>
-                        <a target="_blank" href="https://chandrapanda.github.io/sweater-weather-app/"><img src="assets/images/weather-app.png"></a>
-                        </div>
+                       
                 </div>
             </div>
+            <div id="my-projects" class="jumbotron text-center">
+                <h1 class="display-4">Projects & Applications</h1>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col mb-4">
+                  <div class="card control-height">
+                    <img src="./public/images/password+generator.png" class="card-img-top" alt="coolest-password-generator">
+                    <div class="card-body">
+                      <h5 class="card-title">Password Generator</h5>
+                      <p class="card-text">Generate your own password based on specifications of your choosing.</p>
+                      <a target="_blank" href="https://chandrapanda.github.io/coolest-password-generator/" type="button" class="btn btn-info">Visit App</a>
+                      <a target="_blank" href="https://github.com/chandrapanda/coolest-password-generator" type="button" class="btn btn-info">View Repository</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col mb-4">
+                  <div class="card control-height">
+                    <img src="./public/images/quiz+game.png" class="card-img-top" alt="quiz-game">
+                    <div class="card-body">
+                      <h5 class="card-title">JavaScript Quiz Game</h5>
+                      <p class="card-text">Challange your JS knowledge as you battle the clock and then log your high score locally!</p>
+                      <a target="_blank" href="https://chandrapanda.github.io/squidQuizGame/" type="button" class="btn btn-info">Visit App</a>
+                      <a target="_blank" href="https://github.com/chandrapanda/squidQuizGame" type="button" class="btn btn-info">View Repository</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col mb-4">
+                  <div class="card control-height">
+                    <img src="./public/images/boredom.png" class="card-img-top" alt="fight-boredom">
+                    <div class="card-body">
+                      <h5 class="card-title">Don't Get Bored</h5>
+                      <p class="card-text">Entertain yourself eternally with kitty cat facts, pictures of adorable dogs, and Chuck Norris jokes. Save your favorites!</p>
+                      <a target="_blank" href="https://chandrapanda.github.io/MXC-team/" type="button" class="btn btn-info">Visit App</a>
+                      <a target="_blank" href="https://github.com/chandrapanda/MXC-team" type="button" class="btn btn-info">View Repository</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col mb-4">
+                  <div class="card control-height">
+                    <img src="./public/images/weather-app.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Sweater Weather App</h5>
+                      <p class="card-text">Check the five-day forecast of any city in the world.</p>
+                      <a target="_blank" href="https://chandrapanda.github.io/sweater-weather-app/" type="button" class="btn btn-info">Visit App</a>
+                      <a target="_blank" href="https://github.com/chandrapanda/sweater-weather-app" type="button" class="btn btn-info">View Repository</a>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             <div class="jumbotron text-center" id="contact-me">
                 <h2>Contact</h2>
                 (email hidden) / 206-485-0489
@@ -86,7 +132,7 @@
             </ul>
             <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-            <script src="assets/script.js"></script>            
+            <script src="./public/js/script.js"></script>            
         </footer>
       </body>
 
