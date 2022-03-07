@@ -142,7 +142,8 @@ aside {
 }
 
 .control-height {
-  height: 750px;
+  height: 600px;
+  padding: 10px;
 }
 
 .item-container {
