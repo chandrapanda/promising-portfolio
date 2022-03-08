@@ -20,6 +20,10 @@ header {
   text-shadow: 2px 2px 8px beige;
 }
 
+.my-button {
+  margin: 10px;
+}
+
 header img {
   width: 30%;
 }
@@ -67,16 +71,6 @@ footer {
 .main {
   margin-left: 160px; /* Same as the width of the sidebar */
   padding: 0px 10px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
 }
 
 /* Adds background image of desert and sky */
@@ -245,6 +239,25 @@ footer ul li {
 /* When screen becomes smaller than 800px, unlinked images are removed from page and project demos also become smaller. */
 
 @media (max-width: 800px) {
+  body {
+    font-family: "Comfortaa";
+    margin-left: 10px;
+    background-color: #bbd1ea;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+
+  .jumbotron {
+    font-size: 14px;
+  }
+  .sidenav {
+    display: none;
+  }
+
   .typing-demo {
     font-size: 20px;
   }
